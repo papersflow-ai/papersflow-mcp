@@ -127,14 +127,15 @@ Extension-repo style:
 gemini extensions install https://github.com/papersflow-ai/papersflow-mcp
 ```
 
+`gemini extensions install` installs the extension package. It does not complete OAuth during install.
+
 Gemini MCP config:
 
 ```json
 {
   "mcpServers": {
     "papersflow-mcp": {
-      "type": "http",
-      "url": "https://doxa.papersflow.ai/mcp",
+      "httpUrl": "https://doxa.papersflow.ai/mcp",
       "headers": {
         "Authorization": "Bearer YOUR_TOKEN"
       }
@@ -164,7 +165,7 @@ run:
 /mcp list
 ```
 
-That status is expected until the browser login and OAuth consent flow finishes successfully.
+That status is expected until the browser login and OAuth consent flow finishes successfully. If you installed from the extension repo, the browser opens after Gemini starts the auth flow, not during `gemini extensions install`.
 
 Smoke test:
 

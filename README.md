@@ -26,7 +26,7 @@ Authenticated and paid tools are available through PapersFlow account access and
 
 ## Gemini CLI Extension
 
-This repository also includes a root `gemini-extension.json` so Gemini CLI can index it as an extension wrapper around the hosted MCP server.
+This repository also includes a root `gemini-extension.json` so Gemini CLI can install it as an extension wrapper around the hosted MCP server.
 
 Official Gemini CLI flow supported by the docs:
 
@@ -34,7 +34,7 @@ Official Gemini CLI flow supported by the docs:
 gemini extensions install https://github.com/papersflow-ai/papersflow-mcp
 ```
 
-The extension manifest lives at the repository root and points Gemini CLI at the hosted MCP endpoint.
+The extension manifest lives at the repository root and points Gemini CLI at the hosted MCP endpoint using Gemini's remote MCP config shape.
 
 If Gemini shows:
 
@@ -49,6 +49,8 @@ that is expected until OAuth is completed inside Gemini:
 /mcp refresh
 /mcp list
 ```
+
+`gemini extensions install` installs the extension package. It does not complete OAuth during install. The browser opens when Gemini starts the remote MCP auth flow, typically via `/mcp auth papersflow-mcp` or the first auth-required connection attempt.
 
 Gemini CLI references:
 

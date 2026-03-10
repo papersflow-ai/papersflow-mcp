@@ -4,8 +4,7 @@
   "description": "Production MCP server for literature search, citation verification, related-paper discovery, and authenticated research workflows in PapersFlow.",
   "mcpServers": {
     "papersflow-mcp": {
-      "type": "http",
-      "url": "https://doxa.papersflow.ai/mcp"
+      "httpUrl": "https://doxa.papersflow.ai/mcp"
     }
   }
 }
