@@ -31,10 +31,24 @@ This repository also includes a root `gemini-extension.json` so Gemini CLI can i
 Official Gemini CLI flow supported by the docs:
 
 ```bash
-gemini extensions install https://github.com/papersareflowing/papersflow-mcp
+gemini extensions install https://github.com/papersflow-ai/papersflow-mcp
 ```
 
 The extension manifest lives at the repository root and points Gemini CLI at the hosted MCP endpoint.
+
+If Gemini shows:
+
+```text
+papersflow-mcp (from papersflow-mcp) - Disconnected (OAuth not authenticated)
+```
+
+that is expected until OAuth is completed inside Gemini:
+
+```text
+/mcp auth papersflow-mcp
+/mcp refresh
+/mcp list
+```
 
 Gemini CLI references:
 

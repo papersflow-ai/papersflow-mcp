@@ -124,7 +124,7 @@ gemini mcp add --scope project --transport http papersflow-mcp https://doxa.pape
 Extension-repo style:
 
 ```bash
-gemini extensions install https://github.com/papersareflowing/papersflow-mcp
+gemini extensions install https://github.com/papersflow-ai/papersflow-mcp
 ```
 
 Gemini MCP config:
@@ -149,6 +149,22 @@ Then start Gemini and use the in-session MCP commands when needed:
 /mcp list
 /mcp refresh
 ```
+
+If Gemini reports:
+
+```text
+papersflow-mcp (from papersflow-mcp) - Disconnected (OAuth not authenticated)
+```
+
+run:
+
+```bash
+/mcp auth papersflow-mcp
+/mcp refresh
+/mcp list
+```
+
+That status is expected until the browser login and OAuth consent flow finishes successfully.
 
 Smoke test:
 
