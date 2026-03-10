@@ -16,6 +16,9 @@
 - `verify_citation`
 - `search_literature`
 - `find_related_papers`
+- `get_citation_graph`
+- `get_paper_neighbors`
+- `expand_citation_graph`
 
 Authenticated and paid tools are available through PapersFlow account access and plan entitlements.
 

@@ -135,7 +135,8 @@ Gemini MCP config:
 {
   "mcpServers": {
     "papersflow-mcp": {
-      "httpUrl": "https://doxa.papersflow.ai/mcp",
+      "type": "http",
+      "url": "https://doxa.papersflow.ai/mcp",
       "headers": {
         "Authorization": "Bearer YOUR_TOKEN"
       }
@@ -224,6 +225,9 @@ Start with these tools:
 - `verify_citation`
 - `search_literature`
 - `find_related_papers`
+- `get_citation_graph`
+- `get_paper_neighbors`
+- `expand_citation_graph`
 
 This is the right first step for a ChatGPT-facing MCP app or internal compatibility pass.
 

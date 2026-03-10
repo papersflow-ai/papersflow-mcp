@@ -20,6 +20,9 @@ The hosted service runs on PapersFlow infrastructure and uses the PapersFlow pla
 - `verify_citation`
 - `search_literature`
 - `find_related_papers`
+- `get_citation_graph`
+- `get_paper_neighbors`
+- `expand_citation_graph`
 
 ### Signed-in
 
@@ -29,6 +32,7 @@ The hosted service runs on PapersFlow infrastructure and uses the PapersFlow pla
 
 - `run_deepscan`
 - `get_deepscan_status`
+- `get_deepscan_live_snapshot`
 - `get_deepscan_report`
 - `run_python_plot`
 
