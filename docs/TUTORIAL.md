@@ -121,6 +121,12 @@ gemini mcp add --scope project --transport http papersflow-mcp https://doxa.pape
   -H "Authorization: Bearer YOUR_TOKEN"
 ```
 
+Extension-repo style:
+
+```bash
+gemini extensions install https://github.com/papersareflowing/papersflow-mcp
+```
+
 Gemini MCP config:
 
 ```json

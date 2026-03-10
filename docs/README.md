@@ -42,10 +42,6 @@ The hosted service runs on PapersFlow infrastructure and uses the PapersFlow pla
 ## Operational Docs
 
 - Setup tutorial: [TUTORIAL.md](./TUTORIAL.md)
-- Release checklist: [RELEASE_CHECKLIST.md](./RELEASE_CHECKLIST.md)
-- ChatGPT submission notes: [CHATGPT_SUBMISSION.md](./CHATGPT_SUBMISSION.md)
-- Claude submission notes: [CLAUDE_SUBMISSION.md](./CLAUDE_SUBMISSION.md)
-- Claude directory packet: [CLAUDE_DIRECTORY_PACKET.md](./CLAUDE_DIRECTORY_PACKET.md)
 
 ## Release Reality
 
@@ -58,22 +54,14 @@ The hosted service runs on PapersFlow infrastructure and uses the PapersFlow pla
 - PAT create / copy / revoke flows in the PapersFlow settings UI
 - OAuth approval flow inside PapersFlow Settings
 
-### Still not release-complete
-
-- final marketplace review prep for ChatGPT and Claude
-- broader UX polish for PAT onboarding and client setup
-- anonymous quota and premium entitlement hardening
-- final production hardening pass on auth and telemetry
-
 ## Client Compatibility
 
 - Codex: yes, tested against production
 - Gemini CLI: yes, tested against production
 - Claude Code: yes, tested against production
-- ChatGPT hosted MCP app path: viable now that `search` and `fetch` compatibility tools exist and OAuth metadata is live
-- ChatGPT richer Apps SDK UI: still a second step if we want inline panes, charts, or custom presentation
-- ChatGPT public app/directory release: still needs more hardening and review prep
-- Claude public connector/marketplace release: still needs deployment and auth completion
+- ChatGPT hosted MCP app path: supported through the hosted MCP endpoint and OAuth metadata
+- ChatGPT richer Apps SDK UI: a separate layer if inline panes or custom presentation are needed
+- Claude connector path: supported through the hosted MCP endpoint and OAuth metadata
 
 ## User Setup Reality
 
@@ -95,10 +83,6 @@ The hosted service runs on PapersFlow infrastructure and uses the PapersFlow pla
 
 ## Recommended Release Sequence
 
-1. Polish the Settings onboarding so users can move from PAT creation to client config without guesswork.
-2. Run a final entitlement and anonymous-quota hardening pass.
-3. Re-run client smoke tests against production for Codex, Claude Code, and Gemini CLI.
-4. Run a full OAuth install test with a marketplace-style client.
-5. Prepare company-facing screenshots, policy copy, and support docs.
-6. Submit Claude first.
-7. Submit ChatGPT after the final compatibility and review pass.
+1. Connect the hosted MCP endpoint from your client of choice.
+2. Use public tools first for literature search and citation workflows.
+3. Use OAuth or account entitlements for authenticated and paid workflows.

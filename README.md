@@ -23,10 +23,24 @@ Authenticated and paid tools are available through PapersFlow account access and
 
 - [Setup tutorial](./docs/TUTORIAL.md)
 - [MCP release guide](./docs/README.md)
-- [Claude submission notes](./docs/CLAUDE_SUBMISSION.md)
-- [Claude directory packet](./docs/CLAUDE_DIRECTORY_PACKET.md)
-- [ChatGPT submission notes](./docs/CHATGPT_SUBMISSION.md)
-- [Release checklist](./docs/RELEASE_CHECKLIST.md)
+
+## Gemini CLI Extension
+
+This repository also includes a root `gemini-extension.json` so Gemini CLI can index it as an extension wrapper around the hosted MCP server.
+
+Official Gemini CLI flow supported by the docs:
+
+```bash
+gemini extensions install https://github.com/papersareflowing/papersflow-mcp
+```
+
+The extension manifest lives at the repository root and points Gemini CLI at the hosted MCP endpoint.
+
+Gemini CLI references:
+
+- `https://geminicli.com/docs/extensions/releasing/`
+- `https://geminicli.com/docs/extensions/reference/`
+- `https://geminicli.com/docs/extensions/writing-extensions/`
 
 ## Client Setup
 
