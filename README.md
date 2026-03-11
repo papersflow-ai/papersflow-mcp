@@ -2,6 +2,10 @@
 
 `papersflow-mcp` is PapersFlow's production / GA hosted MCP server for literature search, citation verification, related-paper discovery, and authenticated research workflows across Claude, Codex, Gemini, ChatGPT-style MCP apps, and other MCP clients.
 
+<a href="https://glama.ai/mcp/servers/papersflow-ai/papers-flow">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/papersflow-ai/papers-flow/badge" alt="PapersFlow MCP server" />
+</a>
+
 ## Production Endpoint
 
 - MCP URL: `https://doxa.papersflow.ai/mcp`
