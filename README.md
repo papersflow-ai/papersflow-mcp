@@ -63,6 +63,25 @@ Gemini CLI references:
 
 ## Client Setup
 
+### Cline (VS Code)
+
+Add PapersFlow as a remote MCP server in your Cline MCP settings:
+
+```json
+{
+  "mcpServers": {
+    "papersflow": {
+      "url": "https://doxa.papersflow.ai/mcp",
+      "transportType": "streamable-http"
+    }
+  }
+}
+```
+
+On first use, Cline will open a browser window for OAuth sign-in to your PapersFlow account. Public tools (literature search, citations, paper discovery) work immediately; authenticated tools require a PapersFlow plan.
+
+### Other Clients
+
 Supported client paths today:
 
 - Codex
