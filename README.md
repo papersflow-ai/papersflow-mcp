@@ -107,3 +107,8 @@ The setup guide includes both command-style and config-style snippets where supp
 
 - This repository is the public documentation and submission surface for the hosted MCP service.
 - The production service is operated by PapersFlow and backed by the main PapersFlow platform.
+
+## Hosted deployment
+
+A hosted deployment is available on [Fronteir AI](https://fronteir.ai/mcp/papersflow-ai-papersflow-mcp).
+
